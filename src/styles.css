@@ -59,7 +59,7 @@ input[type="range"]::-webkit-slider-thumb { width: 15px; height: 15px; appearanc
 .preview-toolbar { position: absolute; top: 24px; left: 28px; right: 28px; display: flex; justify-content: space-between; color: #686c63; font: 10px ui-monospace, SFMono-Regular, Menlo, monospace; text-transform: uppercase; letter-spacing: .12em; }
 .url-readout { max-width: 50%; overflow: hidden; text-overflow: ellipsis; color: #91968b; text-transform: none; letter-spacing: 0; }
 .device-stage { position: relative; width: min(88%, 980px); height: min(75dvh, 680px); display: flex; align-items: center; justify-content: center; perspective: 1800px; }
-.device { --scale: .82; position: relative; width: var(--device-width); height: var(--device-height); transform-style: preserve-3d; transform: rotateX(var(--tilt)) rotateY(calc(var(--fold) * -.08)) scale(var(--scale)); transition: transform .65s cubic-bezier(.16, 1, .3, 1), width .65s cubic-bezier(.16, 1, .3, 1), height .65s cubic-bezier(.16, 1, .3, 1); will-change: transform; }
+.device { --scale: .94; position: relative; width: var(--device-width); height: var(--device-height); transform-style: preserve-3d; transform: rotateX(var(--tilt)) rotateY(calc(var(--fold) * -.08)) scale(var(--scale)); transition: transform .65s cubic-bezier(.16, 1, .3, 1), width .65s cubic-bezier(.16, 1, .3, 1), height .65s cubic-bezier(.16, 1, .3, 1); will-change: transform; }
 .device-body { position: absolute; inset: 0; padding: 10px; overflow: visible; border: 1px solid #656860; border-radius: 34px; background: linear-gradient(145deg, #4d504a, #1a1c19 32%, #31332f 75%, #62655e); box-shadow: inset 0 1px 1px #92968c, inset 0 -1px 1px #0a0b09, 0 38px 65px -30px rgba(0,0,0,.75); transform-style: preserve-3d; }
 .screen-clip { position: relative; width: 100%; height: 100%; overflow: hidden; border-radius: 25px; background: #e5e7df; isolation: isolate; }
 .screen-clip iframe { width: 100%; height: 100%; border: 0; background: #fff; }
@@ -101,7 +101,7 @@ input[type="range"]::-webkit-slider-thumb { width: 15px; height: 15px; appearanc
 @media (max-width: 1050px) {
   .workspace { grid-template-columns: 350px 1fr; }
   .control-panel { padding-inline: 28px; }
-  .device { --scale: .64; }
+  .device { --scale: .74; }
 }
 
 @media (max-width: 760px) {
@@ -114,7 +114,7 @@ input[type="range"]::-webkit-slider-thumb { width: 15px; height: 15px; appearanc
   .intro h1 { font-size: 39px; }
   .preview-panel { min-height: 620px; }
   .device-stage { width: 100%; height: 520px; }
-  .device { --scale: .43; }
+  .device { --scale: .51; }
   .preview-toolbar { left: 18px; right: 18px; }
   .disclaimer { right: 18px; left: 18px; text-align: center; }
   .social-links { margin-top: -10px; flex-wrap: wrap; padding: 0 20px; line-height: 1.6; }
