@@ -212,6 +212,9 @@ input[type="range"]::-webkit-slider-thumb { width: 15px; height: 15px; appearanc
 .side-key--volume { top:157px; height:78px; }
 .fold-panel--moving .side-key { display:none; }
 
+/* Keep the folding transition dark instead of revealing the placeholder green. */
+.panel-wallpaper, .fold-panel--moving .panel-wallpaper { background:linear-gradient(145deg,#171817,#080908 62%,#111210); }
+
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
 }
