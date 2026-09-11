@@ -38,8 +38,8 @@ function Device({ url, fold, tilt, rotation, orientation, reloadKey, loading, on
   const width = orientation === "portrait" ? 1060 : 980;
   const height = orientation === "portrait" ? 760 : 460;
   return <div className="device-stage" aria-label="Interactive foldable device preview"><div className={`device ${isOuter ? "device--closed" : ""}`} style={{ "--fold": `${fold}deg`, "--tilt": `${tilt}deg`, "--rotation": `${rotation}deg`, "--device-width": `${width}px`, "--device-height": `${height}px`, "--open-amount": openAmount } as React.CSSProperties}>
-    <div className="fold-panel fold-panel--fixed"><Chassis /><CoverDisplay isOuter={isOuter} url={url} reloadKey={reloadKey} onLoad={onLoad} /><div className="panel-face"><div className="panel-wallpaper" /></div></div>
-    <div className="fold-panel fold-panel--moving"><Chassis /><div className="panel-face"><div className="panel-wallpaper" /></div><RearCamera /></div>
+    <div className="fold-panel fold-panel--fixed"><Chassis /><RearCamera /><div className="panel-face"><div className="panel-wallpaper" /></div></div>
+    <div className="fold-panel fold-panel--moving"><Chassis /><div className="panel-face"><div className="panel-wallpaper" /></div><CoverDisplay isOuter={isOuter} url={url} reloadKey={reloadKey} onLoad={onLoad} /></div>
     <div className="device-body live-inner" inert={isOuter}><div className="screen-clip">{url ? <PreviewContent url={url} reloadKey={reloadKey} onLoad={onLoad} /> : <EmptyScreen onTrySample={onTrySample} />}{loading && <div className="loading-layer" aria-live="polite"><div /><div /><div /></div>}<div className="screen-sheen" /></div><div className="crease" aria-hidden="true" /></div><div className="device-shadow" />
   </div></div>;
 }
