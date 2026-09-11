@@ -1,6 +1,6 @@
 # iPhone 18 Fold View
 
-Foldview previews a public website inside an interactive foldable-phone concept. It is intended for quick responsive-layout reviews, not as a hardware-accurate iOS simulator.
+iPhone 18 Fold View previews a public website inside an interactive foldable-phone concept. Its portrait proportions are calibrated as a visual approximation of iPhone Duo, for quick responsive-layout reviews rather than hardware-accurate iOS emulation.
 
 ## Run locally
 
